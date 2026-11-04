@@ -15,9 +15,18 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-yl9(c748-il@7!(pwp2xu^p86#t_n$9%^prx$9xq8086!9@hx^')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+# No key is kept in the repo. Set SECRET_KEY in the environment (Railway
+# Variables in production, .env locally). A throwaway key is only allowed
+# when DEBUG is on.
+SECRET_KEY = os.environ.get('SECRET_KEY')
+if not SECRET_KEY:
+    if DEBUG:
+        from django.core.management.utils import get_random_secret_key
+        SECRET_KEY = get_random_secret_key()
+    else:
+        raise RuntimeError('SECRET_KEY is not set')
 ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
