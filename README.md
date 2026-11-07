@@ -2,10 +2,26 @@
 
 ![EFP Supply Chain dashboard](https://ken-n7.github.io/portfolio/previews/consignment-ledger.jpg)
 
-Stock control for a fresh-produce supplier that ships on consignment. The
-goods sit on a retailer's shelf and only get paid for once they sell. The app
-tracks what went out to each branch, what sold, what's near expiry and what
-came back, so the monthly count is an actual number instead of a guess.
+Stock control for a fresh-produce supplier that ships on consignment to six
+supermarket branches.
+
+## Why
+
+On consignment, the goods sit on the retailer's shelf, and the supplier only
+gets paid for what sells. The supplier knows what it sent out, and the store
+reports what it sold, but nothing lined the two up. So at the end of the
+month nobody could say for sure where the missing units went: unsold, spoiled
+or expired, returned, or just never recorded. With fresh produce, that gap is
+real money.
+
+This app records every unit going in and out (production, deliveries to each
+branch, returns, losses), and the stock count updates with each one.
+Reconciliation puts each branch's reported sales next to what was actually
+delivered, works out the difference, and keeps it open until someone resolves
+it. Expiry dates are tracked per batch, so stock nearing expiry gets flagged
+before it's lost. Each role gets its own part: warehouse logs production and
+losses, sales logs deliveries, and accounting handles reconciliation. An
+audit log records who changed what.
 
 Made as a prototype for a management information systems course. It isn't
 deployed anywhere.
