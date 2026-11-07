@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Client:** Erlienita's Food Products (EFP)
+**Client:** Evergreen Fresh Produce (EFP), a stand-in name
 **Purpose:** Inventory & Supply Chain Management System with Stock Reconciliation
 **Context:** Demo/prototype for UP Tacloban MGT 186 — not production-deployed
 **Course:** Management of Information Systems and Technology, 2nd Sem AY 2025–2026

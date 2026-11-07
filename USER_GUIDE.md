@@ -1,6 +1,6 @@
 # EFP Supply Chain — User Guide
 
-**Client:** Erlienita's Food Products (EFP)
+**Client:** Evergreen Fresh Produce (EFP), a stand-in name
 **System:** Inventory & Supply Chain Management with Stock Reconciliation
 **Branches served:** SM Grand Central, SM San Jose Del Monte, Savemore Muzon, SM Tarlac, SM Telabastagan, Savemore Apalit
 
